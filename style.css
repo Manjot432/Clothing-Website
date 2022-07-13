@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo img{
+    height: 80px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.nav-container{
+    background-color: #fff;
+    box-shadow: 5px 5px whitesmoke;
+    
+    display: flex;
+}
+.nav-list ul{
+    list-style:none;
+    display: flex;
+    padding: 10px;
+    margin: 20px;
+   
+
+}
+
+.nav-list ul li a{
+    text-decoration: none;
+    padding: 30px;
+    color:rgba(0, 0, 0, 0.62);
+    
+    
+}
+.nav-list ul li a:hover{
+    font-size: 19px;
+    border-bottom: 3px solid hotpink;
+}
+#header{
+     justify-content: center;
+    margin-top: 30px;
+    display: flex;
+    max-width: 100%;
+}
+#header-right{
+    width: 30%;
+}
+#sale{
+    height: 400px;
+}
+#header-left{
+    width: 30%;
+}
+#pic1{
+    width: 400px;
+    height: 400px;
+}
+.cimage{
+    height:250px;
+    width: 250px;
+    margin-top: 20px;
+}
+#collection{
+    margin-top: 20vh;
+
+    
+}
+#collection h2{
+    text-align: center;
+    margin-bottom: 5vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#collection-element{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 30px;
+    background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+    
+}
+.btn{
+    background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+}
+#view{
+   font-size: 21px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.794);
+    color: white;
+}
+#view:hover{
+    background-color: black;
+}
+
+#footer{
+    margin-top: 40px;
+    text-align: center;
+    background-color: black;
+    padding: 5px;
+}
+#footer h3{
+    color: white;
+}
+#footer img{
+    height: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+@media(max-width: 700px){
+    #pic1{
+        width: 300px;
+    }
+    
+}
+@media(max-width: 600px){
+    #pic1{
+        width: 200px;
+    }
+}
+@media(max-width: 500px){
+    #header{
+        flex-wrap: wrap;
+    }
+    #pic1{
+        display: none;
+    }
+}

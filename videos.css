@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo img{
+    height: 80px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.nav-container{
+    background-color: #fff;
+    box-shadow: 5px 5px whitesmoke;
+    
+    display: flex;
+}
+.nav-list ul{
+    list-style:none;
+    display: flex;
+    padding: 10px;
+    margin: 20px;
+   
+
+}
+
+.nav-list ul li a{
+    text-decoration: none;
+    padding: 30px;
+    color:rgba(0, 0, 0, 0.62);
+    
+    
+}
+
+.nav-list ul li a:hover{
+    font-size: 19px;
+    border-bottom: 3px solid hotpink;
+}
+.heading-element{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#heading{
+    font-size: 22px;
+    font-family: "comic sans Ms";
+}
+h2{
+    font-size: 20px;
+    margin-top: 10px;
+}
+#video-container{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    margin-top: 20px;
+   
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.image{
+    height: 250px;
+    width: 250px;
+    margin-top: 20px;
+}
+#footer{
+    margin-top: 40px;
+    text-align: center;
+    background-color: black;
+    padding: 5px;
+}
+#footer h3{
+    color: white;
+}
+#footer img{
+    height: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+@media(max-width: 290px){
+    .image{
+        width: 200px;
+        height: 200px;
+    }
+}
+@media(max-width: 380px){
+    #navbar>.ham{
+                
+        border: 1px dotted black;
+         width: 65px;
+         box-sizing: border-box;
+         right: 10px;
+         top: 20px;
+         position:absolute;
+         cursor: pointer;
+     }
+#navbar>.ham div{
+         background-color: black;
+         margin: 7px;
+         padding: 3px;
+     }
+     #navbar> .nav-list ul{
+        display: none;
+        
+     } 
+     #navbar>.ham:hover .nav-list ul{
+        display: block;
+        position: relative;
+        z-index: 1;
+     }
+     
+     #navbar>.nav-list ul li{
+        margin-top: 15px;
+        padding: 10px;
+     }
+    
+     .nav-list ul li a:hover{
+        border-bottom: none;
+     }
+}
